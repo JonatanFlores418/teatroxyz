@@ -218,7 +218,7 @@
                             <span id="total-amount">$0</span>
                         </div>
                     </div>
-                    <button type="submit" form="purchaseForm" class="btn btn-primary btn-full">
+                    <button type="button" id="proceedPayment" class="btn btn-primary btn-full">
                         <i class="fas fa-credit-card"></i>
                         Proceder al Pago
                     </button>
@@ -341,6 +341,47 @@
 
         // Initialize
         updateSummary();
+        
+        // Payment confirmation
+        document.getElementById('proceedPayment').addEventListener('click', function() {
+            const totalAmount = document.getElementById('total-amount').textContent;
+            const selectedShow = document.getElementById('selected-show').textContent;
+            
+            if (totalAmount === '$0') {
+                alert('Por favor selecciona al menos una entrada');
+                return;
+            }
+            
+            // Show loading state
+            this.innerHTML = '<span class="loading"></span> Procesando pago...';
+            this.disabled = true;
+            
+            // Simulate payment processing
+            setTimeout(() => {
+                // Show success message
+                const successMessage = document.createElement('div');
+                successMessage.className = 'success-message';
+                successMessage.innerHTML = `
+                    <div style="text-align: center; padding: 2rem;">
+                        <i class="fas fa-check-circle" style="font-size: 4rem; color: #28a745; margin-bottom: 1rem;"></i>
+                        <h3 style="color: #28a745; margin-bottom: 1rem;">¡Compra realizada con éxito!</h3>
+                        <p style="margin-bottom: 1rem;"><strong>Espectáculo:</strong> ${selectedShow}</p>
+                        <p style="margin-bottom: 1rem;"><strong>Total pagado:</strong> ${totalAmount}</p>
+                        <p style="margin-bottom: 2rem;">Recibirás las entradas por email en los próximos minutos.</p>
+                        <button onclick="location.reload()" class="btn btn-primary">
+                            <i class="fas fa-home"></i>
+                            Volver al Inicio
+                        </button>
+                    </div>
+                `;
+                
+                // Replace the entire purchase section
+                const purchaseSection = document.querySelector('.purchase-section');
+                purchaseSection.innerHTML = '';
+                purchaseSection.appendChild(successMessage);
+                
+            }, 2000);
+        });
     </script>
 </body>
 </html>
