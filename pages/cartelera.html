@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartelera - Teatro XYZ</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- Fin de Google Analytics -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="../index.html">
+                        <i class="fas fa-theater-masks"></i>
+                        <span>Teatro XYZ</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="salas.html" class="nav-link">Salas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cartelera.html" class="nav-link active">Cartelera</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="registro.html" class="nav-link">Registro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="compra.html" class="nav-link">Comprar</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Cartelera de Espectáculos</h1>
+            <p>Descubre todas las obras que tenemos para ti este mes</p>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters-container">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Buscar espectáculos..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">Todos</button>
+                    <button class="filter-btn" data-category="drama">Drama</button>
+                    <button class="filter-btn" data-category="musical">Musical</button>
+                    <button class="filter-btn" data-category="comedia">Comedia</button>
+                    <button class="filter-btn" data-category="infantil">Infantil</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shows Section -->
+    <section class="shows-section">
+        <div class="container">
+            <div class="shows-grid">
+                <!-- Hamlet -->
+                <div class="show-card" data-category="drama">
+                    <div class="show-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Hamlet" />
+                        <div class="show-overlay">
+                            <a href="compra.html" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="show-info">
+                        <h3>Hamlet</h3>
+                        <p class="show-description">La tragedia clásica de Shakespeare en una producción contemporánea que explora temas universales de venganza, locura y moralidad.</p>
+                        <div class="show-details">
+                            <div class="show-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>15-30 Marzo</span>
+                            </div>
+                            <div class="show-time">
+                                <i class="fas fa-clock"></i>
+                                <span>20:00</span>
+                            </div>
+                            <div class="show-sala">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Sala Principal</span>
+                            </div>
+                        </div>
+                        <div class="show-price">
+                            <span class="price-label">Desde</span>
+                            <span class="price-amount">$25.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- El Fantasma de la Ópera -->
+                <div class="show-card" data-category="musical">
+                    <div class="show-image">
+                        <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="El Fantasma de la Ópera" />
+                        <div class="show-overlay">
+                            <a href="compra.html" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="show-info">
+                        <h3>El Fantasma de la Ópera</h3>
+                        <p class="show-description">Un musical épico que combina romance, misterio y música. Una producción espectacular con efectos especiales y vestuario de época.</p>
+                        <div class="show-details">
+                            <div class="show-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>5-20 Abril</span>
+                            </div>
+                            <div class="show-time">
+                                <i class="fas fa-clock"></i>
+                                <span>19:30</span>
+                            </div>
+                            <div class="show-sala">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Sala Principal</span>
+                            </div>
+                        </div>
+                        <div class="show-price">
+                            <span class="price-label">Desde</span>
+                            <span class="price-amount">$35.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Romeo y Julieta -->
+                <div class="show-card" data-category="drama">
+                    <div class="show-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Romeo y Julieta" />
+                        <div class="show-overlay">
+                            <a href="compra.html" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="show-info">
+                        <h3>Romeo y Julieta</h3>
+                        <p class="show-description">La historia de amor más famosa del mundo en una versión moderna que mantiene la poesía original pero con un enfoque contemporáneo.</p>
+                        <div class="show-details">
+                            <div class="show-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>10-25 Abril</span>
+                            </div>
+                            <div class="show-time">
+                                <i class="fas fa-clock"></i>
+                                <span>20:30</span>
+                            </div>
+                            <div class="show-sala">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Sala Íntima</span>
+                            </div>
+                        </div>
+                        <div class="show-price">
+                            <span class="price-label">Desde</span>
+                            <span class="price-amount">$28.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- La Comedia de los Errores -->
+                <div class="show-card" data-category="comedia">
+                    <div class="show-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="La Comedia de los Errores" />
+                        <div class="show-overlay">
+                            <a href="compra.html" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="show-info">
+                        <h3>La Comedia de los Errores</h3>
+                        <p class="show-description">Una comedia hilarante de Shakespeare llena de confusiones, identidades equivocadas y situaciones cómicas que harán reír a toda la familia.</p>
+                        <div class="show-details">
+                            <div class="show-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>1-15 Mayo</span>
+                            </div>
+                            <div class="show-time">
+                                <i class="fas fa-clock"></i>
+                                <span>19:00</span>
+                            </div>
+                            <div class="show-sala">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Sala Experimental</span>
+                            </div>
+                        </div>
+                        <div class="show-price">
+                            <span class="price-label">Desde</span>
+                            <span class="price-amount">$18.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- El Rey León -->
+                <div class="show-card" data-category="musical">
+                    <div class="show-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="El Rey León" />
+                        <div class="show-overlay">
+                            <a href="compra.html" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="show-info">
+                        <h3>El Rey León</h3>
+                        <p class="show-description">El musical más exitoso del mundo llega a nuestro teatro con una producción llena de color, música y danza africana.</p>
+                        <div class="show-details">
+                            <div class="show-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>20 Mayo - 10 Junio</span>
+                            </div>
+                            <div class="show-time">
+                                <i class="fas fa-clock"></i>
+                                <span>18:00</span>
+                            </div>
+                            <div class="show-sala">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Sala Principal</span>
+                            </div>
+                        </div>
+                        <div class="show-price">
+                            <span class="price-label">Desde</span>
+                            <span class="price-amount">$40.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Peter Pan -->
+                <div class="show-card" data-category="infantil">
+                    <div class="show-image">
+                        <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Peter Pan" />
+                        <div class="show-overlay">
+                            <a href="compra.html" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                    <div class="show-info">
+                        <h3>Peter Pan</h3>
+                        <p class="show-description">La historia del niño que nunca crece, llena de aventuras, piratas y hadas. Una producción mágica para toda la familia.</p>
+                        <div class="show-details">
+                            <div class="show-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>5-20 Junio</span>
+                            </div>
+                            <div class="show-time">
+                                <i class="fas fa-clock"></i>
+                                <span>16:00</span>
+                            </div>
+                            <div class="show-sala">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Sala de Conciertos</span>
+                            </div>
+                        </div>
+                        <div class="show-price">
+                            <span class="price-label">Desde</span>
+                            <span class="price-amount">$15.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-container">
+                <h2>Mantente al día</h2>
+                <p>Recibe notificaciones sobre nuevas obras, descuentos especiales y eventos exclusivos</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" class="newsletter-input">
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Teatro XYZ</h3>
+                    <p>Tu destino para las mejores experiencias teatrales. Más de 20 años llevando arte y cultura a la ciudad.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="salas.html">Salas</a></li>
+                        <li><a href="cartelera.html">Cartelera</a></li>
+                        <li><a href="registro.html">Registro</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Centro</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@teatroxyz.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horarios</h4>
+                    <p>Lunes - Viernes: 9:00 - 20:00</p>
+                    <p>Sábados: 10:00 - 22:00</p>
+                    <p>Domingos: 12:00 - 18:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Teatro XYZ. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teatro XYZ - Venta de Entradas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- Fin de Google Analytics -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <i class="fas fa-theater-masks"></i>
+                        <span>Teatro XYZ</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/salas.html" class="nav-link">Salas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/cartelera.html" class="nav-link">Cartelera</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/registro.html" class="nav-link">Registro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/compra.html" class="nav-link">Comprar</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="hero-particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Descubre la</span>
+                    <span class="title-highlight">Magia del Teatro</span>
+                </h1>
+                <p class="hero-subtitle">Las mejores obras, los mejores artistas, experiencias inolvidables te esperan en Teatro XYZ</p>
+                <div class="hero-buttons">
+                    <a href="pages/cartelera.html" class="btn btn-primary">
+                        <i class="fas fa-calendar-alt"></i>
+                        Ver Cartelera
+                    </a>
+                    <a href="pages/compra.html" class="btn btn-secondary">
+                        <i class="fas fa-ticket-alt"></i>
+                        Comprar Entradas
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Años de Experiencia</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Espectáculos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Espectadores</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Desliza para explorar</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Featured Shows Section -->
+    <section class="featured-shows">
+        <div class="container">
+            <h2 class="section-title">Espectáculos Destacados</h2>
+            <div class="shows-grid">
+                <div class="show-card">
+                    <div class="show-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Hamlet" />
+                        <div class="show-badge">Drama Clásico</div>
+                        <div class="show-overlay">
+                            <div class="show-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                            <a href="pages/compra.html" class="btn btn-primary">
+                                <i class="fas fa-ticket-alt"></i>
+                                Comprar
+                            </a>
+                        </div>
+                    </div>
+                    <div class="show-info">
+                        <h3>Hamlet</h3>
+                        <p class="show-description">La tragedia clásica de Shakespeare en una producción contemporánea que explora temas universales de venganza, locura y moralidad.</p>
+                        <div class="show-details">
+                            <div class="show-meta">
+                                <span class="show-date"><i class="fas fa-calendar"></i> 15-30 Marzo</span>
+                                <span class="show-time"><i class="fas fa-clock"></i> 20:00</span>
+                            </div>
+                            <div class="show-price-section">
+                                <span class="show-price">$25.000</span>
+                                <span class="show-discount">-20%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="show-card">
+                    <div class="show-image">
+                        <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="El Fantasma de la Ópera" />
+                        <div class="show-badge musical">Musical</div>
+                        <div class="show-overlay">
+                            <div class="show-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                            <a href="pages/compra.html" class="btn btn-primary">
+                                <i class="fas fa-ticket-alt"></i>
+                                Comprar
+                            </a>
+                        </div>
+                    </div>
+                    <div class="show-info">
+                        <h3>El Fantasma de la Ópera</h3>
+                        <p class="show-description">Un musical épico que combina romance, misterio y música. Una producción espectacular con efectos especiales y vestuario de época.</p>
+                        <div class="show-details">
+                            <div class="show-meta">
+                                <span class="show-date"><i class="fas fa-calendar"></i> 5-20 Abril</span>
+                                <span class="show-time"><i class="fas fa-clock"></i> 19:30</span>
+                            </div>
+                            <div class="show-price-section">
+                                <span class="show-price">$35.000</span>
+                                <span class="show-discount">-15%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="show-card">
+                    <div class="show-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Romeo y Julieta" />
+                        <div class="show-badge romance">Romance</div>
+                        <div class="show-overlay">
+                            <div class="show-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                            <a href="pages/compra.html" class="btn btn-primary">
+                                <i class="fas fa-ticket-alt"></i>
+                                Comprar
+                            </a>
+                        </div>
+                    </div>
+                    <div class="show-info">
+                        <h3>Romeo y Julieta</h3>
+                        <p class="show-description">La historia de amor más famosa del mundo en una versión moderna que mantiene la poesía original pero con un enfoque contemporáneo.</p>
+                        <div class="show-details">
+                            <div class="show-meta">
+                                <span class="show-date"><i class="fas fa-calendar"></i> 10-25 Abril</span>
+                                <span class="show-time"><i class="fas fa-clock"></i> 20:30</span>
+                            </div>
+                            <div class="show-price-section">
+                                <span class="show-price">$28.000</span>
+                                <span class="show-discount">-10%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-header">
+                <h2 class="section-title">¿Por qué elegir Teatro XYZ?</h2>
+                <p class="section-subtitle">Más de 20 años brindando experiencias teatrales únicas</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <h3>Entradas Fáciles</h3>
+                    <p>Compra tus entradas de forma rápida y segura desde cualquier dispositivo con nuestro sistema de reservas online</p>
+                    <div class="feature-highlight">
+                        <span>100% Online</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Calidad Garantizada</h3>
+                    <p>Las mejores producciones con artistas de renombre internacional y tecnología de última generación</p>
+                    <div class="feature-highlight">
+                        <span>Premiado</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Horarios Flexibles</h3>
+                    <p>Funciones en diferentes horarios para adaptarse a tu agenda, incluyendo funciones matutinas y nocturnas</p>
+                    <div class="feature-highlight">
+                        <span>7 días/semana</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Seguridad Total</h3>
+                    <p>Protocolos de seguridad implementados para garantizar una experiencia segura y cómoda</p>
+                    <div class="feature-highlight">
+                        <span>Certificado</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Experiencia Familiar</h3>
+                    <p>Espacios diseñados para toda la familia con áreas especiales para niños y adultos mayores</p>
+                    <div class="feature-highlight">
+                        <span>Para todos</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Beneficios Exclusivos</h3>
+                    <p>Descuentos especiales, acceso anticipado y beneficios únicos para nuestros miembros</p>
+                    <div class="feature-highlight">
+                        <span>VIP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Teatro XYZ</h3>
+                    <p>Tu destino para las mejores experiencias teatrales. Más de 20 años llevando arte y cultura a la ciudad.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="pages/salas.html">Salas</a></li>
+                        <li><a href="pages/cartelera.html">Cartelera</a></li>
+                        <li><a href="pages/registro.html">Registro</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Centro</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@teatroxyz.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horarios</h4>
+                    <p>Lunes - Viernes: 9:00 - 20:00</p>
+                    <p>Sábados: 10:00 - 22:00</p>
+                    <p>Domingos: 12:00 - 18:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Teatro XYZ. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

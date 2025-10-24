@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salas - Teatro XYZ</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- Fin de Google Analytics -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="../index.html">
+                        <i class="fas fa-theater-masks"></i>
+                        <span>Teatro XYZ</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="salas.html" class="nav-link active">Salas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cartelera.html" class="nav-link">Cartelera</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="registro.html" class="nav-link">Registro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="compra.html" class="nav-link">Comprar</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Nuestras Salas</h1>
+            <p>Descubre nuestros espacios únicos diseñados para ofrecerte la mejor experiencia teatral</p>
+        </div>
+    </section>
+
+    <!-- Salas Section -->
+    <section class="salas-section">
+        <div class="container">
+            <div class="salas-grid">
+                <!-- Sala Principal -->
+                <div class="sala-card">
+                    <div class="sala-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sala Principal" />
+                        <div class="sala-overlay">
+                            <span class="sala-capacity">500 asientos</span>
+                        </div>
+                    </div>
+                    <div class="sala-info">
+                        <h3>Sala Principal</h3>
+                        <p class="sala-description">Nuestra sala más grande y emblemática, con capacidad para 500 espectadores. Equipada con la última tecnología en sonido e iluminación, es el escenario perfecto para grandes producciones y musicales.</p>
+                        <div class="sala-features">
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <span>500 asientos</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-volume-up"></i>
+                                <span>Sistema de sonido premium</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>Iluminación profesional</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-wheelchair"></i>
+                                <span>Accesibilidad completa</span>
+                            </div>
+                        </div>
+                        <div class="sala-price">
+                            <span>Desde $15.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sala Intima -->
+                <div class="sala-card">
+                    <div class="sala-image">
+                        <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sala Íntima" />
+                        <div class="sala-overlay">
+                            <span class="sala-capacity">150 asientos</span>
+                        </div>
+                    </div>
+                    <div class="sala-info">
+                        <h3>Sala Íntima</h3>
+                        <p class="sala-description">Un espacio más pequeño y acogedor, ideal para obras de teatro experimental, monólogos y presentaciones íntimas. La cercanía con los artistas crea una experiencia única.</p>
+                        <div class="sala-features">
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <span>150 asientos</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-microphone"></i>
+                                <span>Acústica perfecta</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-eye"></i>
+                                <span>Vista privilegiada</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-heart"></i>
+                                <span>Ambiente íntimo</span>
+                            </div>
+                        </div>
+                        <div class="sala-price">
+                            <span>Desde $12.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sala Experimental -->
+                <div class="sala-card">
+                    <div class="sala-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sala Experimental" />
+                        <div class="sala-overlay">
+                            <span class="sala-capacity">80 asientos</span>
+                        </div>
+                    </div>
+                    <div class="sala-info">
+                        <h3>Sala Experimental</h3>
+                        <p class="sala-description">Un espacio versátil y moderno diseñado para performances experimentales, danza contemporánea y artes escénicas innovadoras. Su diseño flexible permite múltiples configuraciones.</p>
+                        <div class="sala-features">
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <span>80 asientos</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-cogs"></i>
+                                <span>Configuración flexible</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-video"></i>
+                                <span>Proyección digital</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-palette"></i>
+                                <span>Arte contemporáneo</span>
+                            </div>
+                        </div>
+                        <div class="sala-price">
+                            <span>Desde $8.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sala de Conciertos -->
+                <div class="sala-card">
+                    <div class="sala-image">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sala de Conciertos" />
+                        <div class="sala-overlay">
+                            <span class="sala-capacity">300 asientos</span>
+                        </div>
+                    </div>
+                    <div class="sala-info">
+                        <h3>Sala de Conciertos</h3>
+                        <p class="sala-description">Especialmente diseñada para conciertos, recitales y presentaciones musicales. Cuenta con una acústica excepcional y equipamiento de última generación para música en vivo.</p>
+                        <div class="sala-features">
+                            <div class="feature">
+                                <i class="fas fa-users"></i>
+                                <span>300 asientos</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-music"></i>
+                                <span>Acústica perfecta</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-microphone-alt"></i>
+                                <span>Equipamiento profesional</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-piano"></i>
+                                <span>Piano de cola</span>
+                            </div>
+                        </div>
+                        <div class="sala-price">
+                            <span>Desde $18.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="amenities-section">
+        <div class="container">
+            <h2 class="section-title">Amenidades del Teatro</h2>
+            <div class="amenities-grid">
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-parking"></i>
+                    </div>
+                    <h3>Estacionamiento</h3>
+                    <p>Estacionamiento gratuito para 200 vehículos con acceso directo al teatro</p>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Restaurante</h3>
+                    <p>Restaurante gourmet con menú especializado y servicio de bar</p>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Tienda</h3>
+                    <p>Tienda de souvenirs y merchandising oficial de las producciones</p>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>WiFi Gratuito</h3>
+                    <p>Conexión WiFi de alta velocidad disponible en todas las áreas</p>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>Guardería</h3>
+                    <p>Servicio de cuidado infantil durante las funciones</p>
+                </div>
+                <div class="amenity-card">
+                    <div class="amenity-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Pagos</h3>
+                    <p>Aceptamos todas las tarjetas de crédito y débito</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Teatro XYZ</h3>
+                    <p>Tu destino para las mejores experiencias teatrales. Más de 20 años llevando arte y cultura a la ciudad.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="salas.html">Salas</a></li>
+                        <li><a href="cartelera.html">Cartelera</a></li>
+                        <li><a href="registro.html">Registro</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Centro</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@teatroxyz.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horarios</h4>
+                    <p>Lunes - Viernes: 9:00 - 20:00</p>
+                    <p>Sábados: 10:00 - 22:00</p>
+                    <p>Domingos: 12:00 - 18:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Teatro XYZ. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Entradas - Teatro XYZ</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- Fin de Google Analytics -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="../index.html">
+                        <i class="fas fa-theater-masks"></i>
+                        <span>Teatro XYZ</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="salas.html" class="nav-link">Salas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cartelera.html" class="nav-link">Cartelera</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="registro.html" class="nav-link">Registro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="compra.html" class="nav-link active">Comprar</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Comprar Entradas</h1>
+            <p>Selecciona tu espectáculo favorito y reserva tus asientos</p>
+        </div>
+    </section>
+
+    <!-- Purchase Section -->
+    <section class="purchase-section">
+        <div class="container">
+            <div class="purchase-container">
+                <!-- Show Selection -->
+                <div class="show-selection">
+                    <h2>Selecciona tu Espectáculo</h2>
+                    <div class="show-options">
+                        <div class="show-option active" data-show="hamlet">
+                            <div class="show-image">
+                                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Hamlet" />
+                            </div>
+                            <div class="show-details">
+                                <h3>Hamlet</h3>
+                                <p>15-30 Marzo | 20:00</p>
+                                <span class="show-price">$25.000</span>
+                            </div>
+                        </div>
+                        <div class="show-option" data-show="fantasma">
+                            <div class="show-image">
+                                <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="El Fantasma de la Ópera" />
+                            </div>
+                            <div class="show-details">
+                                <h3>El Fantasma de la Ópera</h3>
+                                <p>5-20 Abril | 19:30</p>
+                                <span class="show-price">$35.000</span>
+                            </div>
+                        </div>
+                        <div class="show-option" data-show="romeo">
+                            <div class="show-image">
+                                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Romeo y Julieta" />
+                            </div>
+                            <div class="show-details">
+                                <h3>Romeo y Julieta</h3>
+                                <p>10-25 Abril | 20:30</p>
+                                <span class="show-price">$28.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ticket Selection -->
+                <div class="ticket-selection">
+                    <h2>Selecciona tus Entradas</h2>
+                    <div class="ticket-types">
+                        <div class="ticket-type">
+                            <div class="ticket-info">
+                                <h3>VIP</h3>
+                                <p>Asientos premium con vista privilegiada</p>
+                                <span class="ticket-price">$45.000</span>
+                            </div>
+                            <div class="ticket-controls">
+                                <button class="quantity-btn" onclick="changeQuantity('vip', -1)">-</button>
+                                <span class="quantity" id="vip-quantity">0</span>
+                                <button class="quantity-btn" onclick="changeQuantity('vip', 1)">+</button>
+                            </div>
+                        </div>
+                        <div class="ticket-type">
+                            <div class="ticket-info">
+                                <h3>Platea</h3>
+                                <p>Asientos centrales con excelente vista</p>
+                                <span class="ticket-price">$35.000</span>
+                            </div>
+                            <div class="ticket-controls">
+                                <button class="quantity-btn" onclick="changeQuantity('platea', -1)">-</button>
+                                <span class="quantity" id="platea-quantity">0</span>
+                                <button class="quantity-btn" onclick="changeQuantity('platea', 1)">+</button>
+                            </div>
+                        </div>
+                        <div class="ticket-type">
+                            <div class="ticket-info">
+                                <h3>General</h3>
+                                <p>Asientos laterales con buena vista</p>
+                                <span class="ticket-price">$25.000</span>
+                            </div>
+                            <div class="ticket-controls">
+                                <button class="quantity-btn" onclick="changeQuantity('general', -1)">-</button>
+                                <span class="quantity" id="general-quantity">0</span>
+                                <button class="quantity-btn" onclick="changeQuantity('general', 1)">+</button>
+                            </div>
+                        </div>
+                        <div class="ticket-type">
+                            <div class="ticket-info">
+                                <h3>Estudiante</h3>
+                                <p>Descuento especial con carnet estudiantil</p>
+                                <span class="ticket-price">$15.000</span>
+                            </div>
+                            <div class="ticket-controls">
+                                <button class="quantity-btn" onclick="changeQuantity('estudiante', -1)">-</button>
+                                <span class="quantity" id="estudiante-quantity">0</span>
+                                <button class="quantity-btn" onclick="changeQuantity('estudiante', 1)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Customer Information -->
+                <div class="customer-info">
+                    <h2>Información del Cliente</h2>
+                    <form id="purchaseForm" class="purchase-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customerName">Nombre Completo *</label>
+                                <input type="text" id="customerName" name="customerName" class="form-control" required>
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="customerEmail">Correo Electrónico *</label>
+                                <input type="email" id="customerEmail" name="customerEmail" class="form-control" required>
+                                <div class="error-message"></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customerPhone">Teléfono *</label>
+                                <input type="tel" id="customerPhone" name="customerPhone" class="form-control" required>
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="customerId">Cédula de Identidad *</label>
+                                <input type="text" id="customerId" name="customerId" class="form-control" required>
+                                <div class="error-message"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Payment Summary -->
+                <div class="payment-summary">
+                    <h2>Resumen de Compra</h2>
+                    <div class="summary-details">
+                        <div class="summary-item">
+                            <span>Espectáculo:</span>
+                            <span id="selected-show">Hamlet</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Fecha:</span>
+                            <span>15 Marzo, 2024</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Hora:</span>
+                            <span>20:00</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Sala:</span>
+                            <span>Sala Principal</span>
+                        </div>
+                        <div class="ticket-summary" id="ticket-summary">
+                            <!-- Ticket details will be populated by JavaScript -->
+                        </div>
+                        <div class="summary-total">
+                            <span>Total:</span>
+                            <span id="total-amount">$0</span>
+                        </div>
+                    </div>
+                    <button type="submit" form="purchaseForm" class="btn btn-primary btn-full">
+                        <i class="fas fa-credit-card"></i>
+                        Proceder al Pago
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods -->
+    <section class="payment-methods">
+        <div class="container">
+            <h2>Métodos de Pago Aceptados</h2>
+            <div class="payment-icons">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fas fa-mobile-alt"></i>
+            </div>
+            <p>Pago seguro con encriptación SSL</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Teatro XYZ</h3>
+                    <p>Tu destino para las mejores experiencias teatrales. Más de 20 años llevando arte y cultura a la ciudad.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="salas.html">Salas</a></li>
+                        <li><a href="cartelera.html">Cartelera</a></li>
+                        <li><a href="registro.html">Registro</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Centro</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@teatroxyz.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horarios</h4>
+                    <p>Lunes - Viernes: 9:00 - 20:00</p>
+                    <p>Sábados: 10:00 - 22:00</p>
+                    <p>Domingos: 12:00 - 18:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Teatro XYZ. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        // Ticket quantity management
+        let ticketQuantities = {
+            vip: 0,
+            platea: 0,
+            general: 0,
+            estudiante: 0
+        };
+
+        const ticketPrices = {
+            vip: 45000,
+            platea: 35000,
+            general: 25000,
+            estudiante: 15000
+        };
+
+        function changeQuantity(type, change) {
+            const newQuantity = Math.max(0, ticketQuantities[type] + change);
+            ticketQuantities[type] = newQuantity;
+            document.getElementById(`${type}-quantity`).textContent = newQuantity;
+            updateSummary();
+        }
+
+        function updateSummary() {
+            const ticketSummary = document.getElementById('ticket-summary');
+            let summaryHTML = '';
+            let total = 0;
+
+            Object.keys(ticketQuantities).forEach(type => {
+                if (ticketQuantities[type] > 0) {
+                    const subtotal = ticketQuantities[type] * ticketPrices[type];
+                    total += subtotal;
+                    summaryHTML += `
+                        <div class="summary-item">
+                            <span>${type.charAt(0).toUpperCase() + type.slice(1)} x${ticketQuantities[type]}:</span>
+                            <span>$${subtotal.toLocaleString()}</span>
+                        </div>
+                    `;
+                }
+            });
+
+            ticketSummary.innerHTML = summaryHTML;
+            document.getElementById('total-amount').textContent = `$${total.toLocaleString()}`;
+        }
+
+        // Show selection
+        document.querySelectorAll('.show-option').forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelectorAll('.show-option').forEach(opt => opt.classList.remove('active'));
+                this.classList.add('active');
+                document.getElementById('selected-show').textContent = this.querySelector('h3').textContent;
+            });
+        });
+
+        // Initialize
+        updateSummary();
+    </script>
+</body>
+</html>
