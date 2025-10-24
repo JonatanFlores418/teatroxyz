@@ -586,7 +586,7 @@ function initializeDatePicker() {
     const today = new Date().toISOString().split('T')[0];
     
     dateInputs.forEach(input => {
-        input.min = today;
+        input.max = today;
     });
 }
 
