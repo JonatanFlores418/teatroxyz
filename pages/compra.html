@@ -347,8 +347,19 @@
             const totalAmount = document.getElementById('total-amount').textContent;
             const selectedShow = document.getElementById('selected-show').textContent;
             
+            // Validate required fields
+            const customerName = document.getElementById('customerName').value.trim();
+            const customerEmail = document.getElementById('customerEmail').value.trim();
+            const customerPhone = document.getElementById('customerPhone').value.trim();
+            const customerId = document.getElementById('customerId').value.trim();
+            
             if (totalAmount === '$0') {
                 alert('Por favor selecciona al menos una entrada');
+                return;
+            }
+            
+            if (!customerName || !customerEmail || !customerPhone || !customerId) {
+                alert('Por favor completa toda la información del cliente');
                 return;
             }
             

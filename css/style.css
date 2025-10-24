@@ -371,7 +371,7 @@ body {
 .shows-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+    gap: 2rem;
     margin-top: 4rem;
     position: relative;
     z-index: 2;
@@ -1182,11 +1182,12 @@ body {
 .salas-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    gap: 2.5rem;
     margin-top: 3rem;
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
+    align-items: start;
 }
 
 .sala-card {
